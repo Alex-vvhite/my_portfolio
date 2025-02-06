@@ -1,0 +1,100 @@
+.header{
+    background-color: #232733;
+    padding-top: 10px;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* //////////////////////////Бургер-меню//////////////////////////////////////////*/
+.burger_menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1100;
+}
+
+.burger_menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Прячем стандартное меню на мобильных */
+@media (max-width: 768px) {
+    .burger_menu {
+        display: flex;
+    }
+
+    .header_menu {
+        display: none; /* Прячем меню */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Показываем меню под хедером */
+        right: 0;
+        background-color: #282828;
+        width: 100%;
+        gap: 20px;
+        padding: 20px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .header_menu.active {
+        display: flex; /* Показываем меню при активации */
+    }
+
+    .header_items {
+        gap: 20px;
+    }
+}
+.haeder_logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.header_menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.App-logo{
+    width: 60px;
+    height: 55px;
+}
+.header_link{
+    transition: 0.5s;
+    padding: 3px;
+}
+.header_link:hover{
+    color:#232733;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.App-author{
+    max-width: 100%;
+    height: 500px;
+    border-radius: 1000px;
+}
+.Name_header{
+    font-size: 96px;
+    text-transform: uppercase;
+    color: #DBE8D4;
+    font-family: "Josefin Sans", serif;
+    font-weight: Thin;
+    letter-spacing: 12px;
+    margin-bottom: 10px;
+}
+.Text_header{
+    font-size: 24px;
+    font-family: "Josefin Sans", serif;
+    font-weight: Bold;
+    text-transform: uppercase;
+    color: #81C7BC;
+    letter-spacing: 2.4px;
+    margin-bottom: 20px;
+}
