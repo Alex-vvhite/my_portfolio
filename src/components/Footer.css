@@ -1,3 +1,23 @@
 .footer{
-    color:#232733;
+    background-color: #232733;
+    background-image: url(./Background_footer.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 100px;
+}
+.links_social{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer__elemet-about{
+    font-size: 16px;
+    color: #525E65;
+    font-family: "Josefin Sans", serif;
+    font-weight: Thin;
+    padding-bottom: 20px;
 }
